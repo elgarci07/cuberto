@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 4.5vw;
+    color: #00a793;
+}
+
+.header h2 {
+    font-size: 3vw;
+}
+
+.header h3 {
+    font-size: 2vw;
+}
+
+.h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.h2 {
+    font-size: 3vw;
+}
+
+.h3 {
+    font-size: 2vw;
+}
+
+
+/* -- Clases de columnas -- */
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 10%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.one-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.two-column {
+    padding: 7%;
+    float: left;
+    width: 50%;
+}
+
+.two-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.four-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+#section-1 {
+    background-color: #f5eef5;
+    width: 100%;
+}
+
+#section-2 {
+    background-color: #faf5f3;
+    width: 100%;
+}
+
+#section-3 {
+    background-color: #F2F9F8;
+    width: 100%;
+}
+
+#footer1 {
+    background-color: #000000;
+    color: white;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .h1 {
+        font-size: 6vw;
+    }
+    .h2 {
+        font-size: 5vw;
+    }
+    .h3 {
+        font-size: 4vw;
+    }
+    .header h1 {
+        font-size: 8vw;
+    }
+    .header h2 {
+        font-size: 5vw;
+    }
+}
